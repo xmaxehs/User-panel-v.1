@@ -1,0 +1,15 @@
+{
+    "sidebar": {
+        "homeMenu": "Home",
+        "courses": "Courses",
+        "tickets": "Tickets",
+        "requestCertification": "Request Certification",
+        "logOut": "Log Out"
+    },
+    "cards":{
+        "red":"Total Tickets",
+        "blue": "My Courses",
+        "yellow": "Cash Back",
+        "green": "Balance"
+    }
+}

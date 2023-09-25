@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
+
 const SidebarButtons = () => {
+  const [t] = useTranslation("global");
+
   return (
     <div className="w-[90%] mt-6 flex flex-col gap-y-3 md:hidden">
       <div className="flex flex-row items-center w-full p-3 transition-colors bg-green-400 rounded-2xl hover:bg-green-500 gap-x-3">
@@ -18,7 +23,7 @@ const SidebarButtons = () => {
             stroke-linejoin="round"
           />
         </svg>
-        <p className="font-bold text-2xl text-white mt-1.5">Home</p>
+        <p className={"font-bold text-2xl text-white mt-1.5"}>{t("sidebar.homeMenu")}</p>
       </div>
       <div className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
         <svg
@@ -37,7 +42,7 @@ const SidebarButtons = () => {
             stroke-linejoin="round"
           />
         </svg>
-        <p className="font-bold text-2xl text-zinc-700 dark:text-white  mt-1.5">Courses</p>
+        <p className="font-bold text-2xl text-zinc-700 dark:text-white  mt-1.5">{t("sidebar.courses")}</p>
       </div>
       <div className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
         <svg
@@ -56,7 +61,7 @@ const SidebarButtons = () => {
             stroke-linejoin="round"
           />
         </svg>
-        <p className="font-bold text-2xl text-zinc-700 dark:text-white  mt-1.5">Tickets</p>
+        <p className="font-bold text-2xl text-zinc-700 dark:text-white  mt-1.5">{t("sidebar.tickets")}</p>
       </div>
       <div className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
         <svg
@@ -76,7 +81,7 @@ const SidebarButtons = () => {
           />
         </svg>
         <p className="font-bold text-2xl text-zinc-700  dark:text-white mt-1.5">
-          Request Certification
+        {t("sidebar.requestCertification")}
         </p>
       </div>
       <div className="w-full p-3 rounded-2xl bg-[#f00] transition-colors hover:bg-[#c30000] flex flex-row items-center gap-x-3">
@@ -97,7 +102,7 @@ const SidebarButtons = () => {
             </clipPath>
           </defs>
         </svg>
-        <p className="font-bold text-2xl text-white mt-1.5">Log Out</p>
+        <p className="font-bold text-2xl text-white mt-1.5">{t("sidebar.logOut")}</p>
       </div>
     </div>
   );

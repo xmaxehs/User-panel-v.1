@@ -9,6 +9,7 @@ export default {
     extend: {},
     fontFamily: {
       "main" : ['Josefin Sans'],
+      "fa" : ['vazir']
     },
     screens:{
       "xs": {"max" : "480px"},

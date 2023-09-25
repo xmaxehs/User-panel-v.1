@@ -1,0 +1,15 @@
+{
+    "sidebar": {
+        "homeMenu": "خانه",
+        "courses": "دوره ها",
+        "tickets": "تیکت ها",
+        "requestCertification": "درخواست گواهینامه",
+        "logOut": "خروج"
+    },
+    "cards":{
+        "red":"مجموع تیکت ها",
+        "blue": "دوره های من",
+        "yellow": "کش بک",
+        "green": "موجودی حساب"
+    }
+}
