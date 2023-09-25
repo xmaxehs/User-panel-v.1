@@ -9,7 +9,7 @@ export default {
     extend: {},
     fontFamily: {
       "main" : ['Josefin Sans'],
-      "fa" : ['vazir']
+      "fa" : ['Vazirmatn', 'sans-serif']
     },
     screens:{
       "xs": {"max" : "480px"},
