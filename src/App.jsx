@@ -26,7 +26,7 @@ function App() {
   };
 
   const changeFont = () => {
-    return isRunning ? "font-main" : "font-fa";
+    return isRunning ? "font-main" : "!font-fa";
   };
 
   useEffect(() => {
