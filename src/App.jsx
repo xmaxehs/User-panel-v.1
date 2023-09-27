@@ -196,12 +196,12 @@ function App() {
               <div className="bg-white dark:bg-gray-800 p-3.5 md:p-4.5 rounded-2xl mt-3">
                 <div className="flex justify-between items-center pb-3.5 md:pb-4.5 mb-6 md:mb-7 border-b border-b-gray-200 dark:border-b-gray-700">
                   <span className="md:text-xl text-zinc-700 dark:text-white w-full flex justify-end px-4">
-                    پرسش های اخیر
+                  {t("boxQA.title")}
                   </span>
                 </div>
                 <div>
                   <div className="text-zinc-700 dark:text-white font-light mt-7 mb-2 leading-7 text-center">
-                    !تا به الان پرسشی ارسال نکرده‌اید
+                  {t("boxQA.placeholder")}
                   </div>
                 </div>
               </div>

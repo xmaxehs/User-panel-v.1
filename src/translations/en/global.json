@@ -11,5 +11,9 @@
         "blue": "My Courses",
         "yellow": "Cash Back",
         "green": "Balance"
+    },
+    "boxQA":{
+        "title" : "Recent Questions",
+        "placeholder": "You have not any Questions until now!"
     }
 }
