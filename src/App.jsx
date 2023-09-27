@@ -1,10 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { Logo } from "./assets";
 import { Card, SidebarButtons } from "./components";
-import { useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
-import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
 function classNames(...classes) {
@@ -52,7 +50,7 @@ function App() {
   return (
     <>
       <div
-        className={`font-main max-w-[1440px] dark:bg-slate-800 dark:max-w-[2160px] dark:h-screen mx-auto ${changeFont()}`}
+        className={`font-main max-w-[1440px] dark:bg-slate-800 dark:max-w-[2160px] mx-auto dark:min-h-screen ${changeFont()}`}
       >
         <div className="flex flex-row mx-3">
           <div className="flex flex-col w-2/3 md:w-full md:h-screen">
@@ -193,7 +191,7 @@ function App() {
                 </Menu>
               </div>
             </div>
-            <div className="w-full h-full bg-gray-100 p-7 rounded-3xl dark:bg-gray-900 shrink-0">
+            <div className="w-full h-full md:h-min bg-gray-100 p-7 rounded-3xl dark:bg-gray-900 shrink-0">
               <Card />
             </div>
           </div>
