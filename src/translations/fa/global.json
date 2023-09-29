@@ -15,5 +15,13 @@
     "boxQA":{
         "title" : "پرسش های اخیر",
         "placeholder": " !تا به الان پرسشی ارسال نکرده‌اید"
+    },
+    "userBtn":{
+        "username": "احسان پیرنظر",
+        "balance": "موجودی:  $0",
+        "homeTitle": "خانه",
+        "coursesTitle": "دوره های من",
+        "ticketsTitle": "تیکت ها",
+        "exitTitle": "خروج از حساب"
     }
 }

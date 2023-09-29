@@ -15,5 +15,13 @@
     "boxQA":{
         "title" : "Recent Questions",
         "placeholder": "You have not any Questions until now!"
+    },
+    "userBtn":{
+        "username": "Ehsan Pirnazar",
+        "balance": "Balance: 0$",
+        "homeTitle": "Home",
+        "coursesTitle": "Courses",
+        "ticketsTitle": "Tickets",
+        "exitTitle": "Exit"
     }
 }
