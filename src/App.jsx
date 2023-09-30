@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <div
-        className={`font-main max-w-[1440px] dark:bg-slate-800 dark:max-w-[2160px] mx-auto dark:min-h-screen ${changeFont()}`}
+        className={`font-main max-w-[2160px] dark:bg-slate-800 dark:max-w-[2160px] mx-auto dark:min-h-screen ${changeFont()}`}
       >
         <div className="flex flex-row mx-3">
           <div className="flex flex-col w-2/3 md:w-full md:h-screen">
