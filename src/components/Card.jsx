@@ -45,7 +45,7 @@ const Card = () => {
           <p className="text-4xl font-bold text-white">0$</p>
         </div>
       </div>
-      <div className="flex px-3 py-2 min-w-[250px] max-w-[310px] bg-blue-500 rounded-2xl gap-x-2">
+      <div className="flex justify-center items-center px-3 py-2 min-w-[250px] max-w-[310px] bg-blue-500 rounded-2xl gap-x-2">
         <div className="w-[90px] h-[90px] flex flex-col justify-center items-center bg-blue-400 rounded-2xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const Card = () => {
           <p className="text-4xl font-bold text-white">11</p>
         </div>
       </div>
-      <div className="flex px-3 py-2 min-w-[250px] max-w-[310px] bg-rose-500 rounded-2xl gap-x-2">
+      <div className="flex justify-center items-center px-3 py-2 min-w-[250px] max-w-[310px] bg-rose-500 rounded-2xl gap-x-2">
         <div className="w-[90px] h-[90px] flex flex-col justify-center items-center bg-rose-400 rounded-2xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ const Card = () => {
           <p className="text-4xl font-bold text-white">1</p>
         </div>
       </div>
-      <div className="flex px-3 py-2 min-w-[250px] max-w-[310px] bg-green-500 rounded-2xl gap-x-2">
+      <div className="flex justify-center items-center px-3 py-2 min-w-[250px] max-w-[310px] bg-green-500 rounded-2xl gap-x-2">
         <div className="w-[90px] h-[90px] flex flex-col justify-center items-center bg-green-400 rounded-2xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"

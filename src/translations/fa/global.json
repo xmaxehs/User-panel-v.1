@@ -1,27 +1,76 @@
 {
-    "sidebar": {
-        "homeMenu": "خانه",
-        "courses": "دوره ها",
-        "tickets": "تیکت ها",
-        "requestCertification": "درخواست گواهینامه",
-        "logOut": "خروج"
+  "sidebar": {
+    "homeMenu": "خانه",
+    "courses": "دوره ها",
+    "tickets": "تیکت ها",
+    "requestCertification": "درخواست گواهینامه",
+    "logOut": "خروج"
+  },
+  "cards": {
+    "red": "مجموع تیکت ها",
+    "blue": "دوره های من",
+    "yellow": "کش بک",
+    "green": "موجودی حساب"
+  },
+  "boxQA": {
+    "title": "پرسش های اخیر",
+    "placeholder": " !تا به الان پرسشی ارسال نکرده‌اید"
+  },
+  "userBtn": {
+    "username": "احسان پیرنظر",
+    "balance": "موجودی:  $0",
+    "homeTitle": "خانه",
+    "coursesTitle": "دوره های من",
+    "ticketsTitle": "تیکت ها",
+    "exitTitle": "خروج از حساب"
+  },
+  "courses": {
+    "item1": "پروژه های خلاقانه با Html و Css(آپدیت ۲۰۲۳)"
+  },
+  "tickets": {
+    "cards": {
+      "yellow": {
+        "title": "همه تیکت ها",
+        "detail": "1 عدد"
+      },
+      "blue": {
+        "title": "تیکت های باز",
+        "detail": "0 دوره"
+      },
+      "red": {
+        "title": "بسته شده",
+        "detail": "1 تیکت"
+      },
+      "add": "تیکت جدید"
     },
-    "cards":{
-        "red":"مجموع تیکت ها",
-        "blue": "دوره های من",
-        "yellow": "کش بک",
-        "green": "موجودی حساب"
-    },
-    "boxQA":{
-        "title" : "پرسش های اخیر",
-        "placeholder": " !تا به الان پرسشی ارسال نکرده‌اید"
-    },
-    "userBtn":{
-        "username": "احسان پیرنظر",
-        "balance": "موجودی:  $0",
-        "homeTitle": "خانه",
-        "coursesTitle": "دوره های من",
-        "ticketsTitle": "تیکت ها",
-        "exitTitle": "خروج از حساب"
+    "ticketBox": {
+      "title": "تیکت ها",
+      "box1": {
+        "title": "پرداخت کردن و باز نشدن دوره",
+        "date": "1402/05/01 (09:28)",
+        "type": "مالی",
+        "progress": "بسته شده"
+      },
+      "box2": {
+        "title": "مشکل در طراحی سایت",
+        "date": "1402/06/01 (10:28)",
+        "type": "گزارش",
+        "progress": "درحال بررسی"
+      }
     }
+  },
+  "verify": {
+    "title": "دوره های مشمول دریافت مدرک",
+    "box1": {
+      "title": "طراحی خلاقانه با وردپرس",
+      "type": "خریداری شده",
+      "progress": "اتمام یافته"
+    },
+    "box2": {
+      "title": "دوره صفر تا صد بک اند",
+      "type": "رایگان",
+      "progress": "درحال آموزش"
+    },
+    "warningBox": "توجه : تا زمانی که دوره را در پنل خود به اتمام نرسانید امکان درخواست مدرک نیست"
+  }
 }

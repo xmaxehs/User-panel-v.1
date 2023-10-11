@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 
 const SidebarButtons = () => {
@@ -6,7 +7,7 @@ const SidebarButtons = () => {
 
   return (
     <div className="w-[90%] mt-6 flex flex-col gap-y-3 md:hidden">
-      <div className="flex flex-row items-center w-full p-3 transition-colors bg-green-400 rounded-2xl hover:bg-green-500 gap-x-3">
+      <Link to='/User-panel-v.1' className="flex flex-row items-center w-full p-3 transition-colors bg-green-400 rounded-2xl hover:bg-green-500 gap-x-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -24,8 +25,8 @@ const SidebarButtons = () => {
           />
         </svg>
         <p className={"font-bold text-2xl text-white mt-1.5"}>{t("sidebar.homeMenu")}</p>
-      </div>
-      <div className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
+      </Link>
+      <Link to='/User-panel-v.1/courses' className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="38"
@@ -43,8 +44,8 @@ const SidebarButtons = () => {
           />
         </svg>
         <p className="font-bold text-2xl text-zinc-700 dark:text-white  mt-1.5">{t("sidebar.courses")}</p>
-      </div>
-      <div className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
+      </Link>
+      <Link to='/User-panel-v.1/ticket' className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -62,8 +63,8 @@ const SidebarButtons = () => {
           />
         </svg>
         <p className="font-bold text-2xl text-zinc-700 dark:text-white  mt-1.5">{t("sidebar.tickets")}</p>
-      </div>
-      <div className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
+      </Link>
+      <Link to='/User-panel-v.1/verify' className="flex flex-row items-center w-full p-3 transition-colors bg-gray-100 rounded-2xl dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-200 gap-x-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -83,8 +84,8 @@ const SidebarButtons = () => {
         <p className="font-bold text-2xl text-zinc-700  dark:text-white mt-1.5">
         {t("sidebar.requestCertification")}
         </p>
-      </div>
-      <div className="w-full p-3 rounded-2xl bg-[#f00] transition-colors hover:bg-[#c30000] flex flex-row items-center gap-x-3">
+      </Link>
+      <Link to='#' className="w-full p-3 rounded-2xl bg-[#f00] transition-colors hover:bg-[#c30000] flex flex-row items-center gap-x-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -103,7 +104,7 @@ const SidebarButtons = () => {
           </defs>
         </svg>
         <p className="font-bold text-2xl text-white mt-1.5">{t("sidebar.logOut")}</p>
-      </div>
+      </Link>
     </div>
   );
 };

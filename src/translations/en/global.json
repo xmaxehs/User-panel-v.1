@@ -23,5 +23,54 @@
         "coursesTitle": "Courses",
         "ticketsTitle": "Tickets",
         "exitTitle": "Exit"
+    },
+    "courses":{
+        "item1": "Creative projects with HTML and CSS (2023)"
+    },
+    "tickets":{
+        "cards":{
+            "yellow": {
+                "title":"All Tickets",
+                "detail":"1 ticket"
+            },
+            "blue": {
+                "title":"In progress ticket",
+                "detail":"0 ticket"
+            },
+            "red": {
+                "title":"Closed tickets",
+                "detail":"1 ticket"
+            },
+            "add": "Add ticket"
+        },
+        "ticketBox":{
+            "title": "Tickets",
+            "box1":{
+                "title": "Pay for Course and can`t open it",
+                "date": "1402/05/01 (09:28)",
+                "type": "financial",
+                "progress":"closed"
+            },
+            "box2":{
+                "title": "Bug in web design",
+                "date": "1402/06/01 (10:28)",
+                "type": "report",
+                "progress":"in progress"
+            }
+        }
+    },
+    "verify": {
+      "title": "Courses to obtaining certificate",
+      "box1": {
+        "title": "Creative web design with WordPress",
+        "type": "purchased",
+        "progress": "finished"
+      },
+      "box2": {
+        "title": "0 to 100 of Back-End",
+        "type": "free",
+        "progress": "in training"
+      },
+      "warningBox": "Warning : It is not possible to request a certificate until you complete the course in your panel"
     }
 }
