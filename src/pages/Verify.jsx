@@ -4,6 +4,7 @@ import { SidebarButtons } from "../components";
 
 import { useTranslation } from "react-i18next";
 import { Menu, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -126,8 +127,8 @@ function Verify() {
                       <div className="py-2">
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="/User-panel-v.1"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
@@ -155,13 +156,13 @@ function Verify() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.homeTitle")}
                               </div>
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="/User-panel-v.1/courses"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
@@ -189,13 +190,13 @@ function Verify() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.coursesTitle")}
                               </div>
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="/User-panel-v.1/ticket"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
@@ -223,7 +224,41 @@ function Verify() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.ticketsTitle")}
                               </div>
-                            </a>
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/User-panel-v.1/verify"
+                              className={classNames(
+                                active
+                                  ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
+                                  : "text-gray-700",
+                                "flex flex-row items-center mx-4 px-2 gap-x-2"
+                              )}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="36"
+                                height="36"
+                                viewBox="0 0 36 36"
+                                fill="none"
+                                className="w-4 h-4"
+                              >
+                                <path
+                                  d="M12.6667 18L16.2222 21.5556L23.3333 14.4444M18 2L21.3957 5.32706L26 4.14359L27.2772 8.72276L31.8564 10L30.6729 14.6043L34 18L30.6729 21.3957L31.8564 26L27.2772 27.2772L26 31.8564L21.3957 30.6729L18 34L14.6043 30.6729L10 31.8564L8.72276 27.2772L4.14359 26L5.32706 21.3957L2 18L5.32706 14.6043L4.14359 10L8.72276 8.72276L10 4.14359L14.6043 5.32706L18 2Z"
+                                  className="dark:stroke-white"
+                                  stroke="#3F3F46"
+                                  stroke-width="3"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <div className="mt-1 py-2 text-sm dark:text-gray-100">
+                                {t("userBtn.verifyTitle")}
+                              </div>
+                            </Link>
                           )}
                         </Menu.Item>
                       </div>
@@ -231,8 +266,8 @@ function Verify() {
                       <div className="py-2">
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 transition-colors dark:hover:bg-rose-600 dark:hover:rounded-md hover:rounded-md hover:bg-rose-300 dark:text-gray-100"
@@ -261,7 +296,7 @@ function Verify() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.exitTitle")}
                               </div>
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                       </div>
@@ -388,7 +423,7 @@ function Verify() {
               <div className="bg-white dark:bg-gray-800 p-3.5 md:p-4.5 rounded-2xl mb-3">
                 <div className="flex justify-between items-center pb-3.5 md:pb-4.5 mb-6 md:mb-7 border-b border-b-gray-200 dark:border-b-gray-700">
                   <span className="mx-3 md:text-xl text-zinc-700 dark:text-white">
-                  {t("verify.title")}
+                    {t("verify.title")}
                   </span>
                   <svg
                     className="w-4 h-4 mx-3 text-gray-800 dark:text-white"
@@ -433,10 +468,10 @@ function Verify() {
                     </div>
                     <div className="flex items-center gap-5">
                       <span className="text-xs py-1 px-1.5 text-green-500 dark:text-green-400 bg-green-500/10 dark:bg-green-400/10 rounded">
-                      {t("verify.box1.type")}
+                        {t("verify.box1.type")}
                       </span>
                       <span className="text-xs py-1 px-1.5 text-green-500 dark:text-green-400 bg-green-500/10 dark:bg-green-400/10 rounded">
-                      {t("verify.box1.progress")}
+                        {t("verify.box1.progress")}
                       </span>
                     </div>
                   </div>
@@ -451,10 +486,10 @@ function Verify() {
                     </div>
                     <div className="flex items-center gap-5">
                       <span className="text-xs py-1 px-1.5 text-blue-500 dark:text-blue-400 bg-blue-500/10 dark:bg-blue-400/10 rounded">
-                      {t("verify.box2.type")}
+                        {t("verify.box2.type")}
                       </span>
                       <span className="text-xs py-1 px-1.5 text-slate-500 dark:text-yellow-400 bg-slate-500/10 dark:bg-yellow-400/10 rounded">
-                      {t("verify.box2.progress")}
+                        {t("verify.box2.progress")}
                       </span>
                     </div>
                   </div>
@@ -463,7 +498,7 @@ function Verify() {
               <div className=" bg-slate-500/10 dark:bg-yellow-400/10 p-3.5 md:p-4.5 rounded-2xl">
                 <div className="flex justify-center items-center">
                   <span className="mx-3 md:text-xl text-slate-500 dark:text-yellow-400">
-                  {t("verify.warningBox")}
+                    {t("verify.warningBox")}
                   </span>
                 </div>
               </div>

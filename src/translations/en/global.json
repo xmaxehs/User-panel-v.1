@@ -21,6 +21,7 @@
         "balance": "Balance: 0$",
         "homeTitle": "Home",
         "coursesTitle": "Courses",
+        "verifyTitle": "Request Certification",
         "ticketsTitle": "Tickets",
         "exitTitle": "Exit"
     },

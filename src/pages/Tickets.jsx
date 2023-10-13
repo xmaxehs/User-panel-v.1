@@ -4,6 +4,7 @@ import { SidebarButtons } from "../components";
 
 import { useTranslation } from "react-i18next";
 import { Menu, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -126,8 +127,8 @@ function Courses() {
                       <div className="py-2">
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="/User-panel-v.1"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
@@ -155,13 +156,13 @@ function Courses() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.homeTitle")}
                               </div>
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="/User-panel-v.1/courses"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
@@ -189,13 +190,13 @@ function Courses() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.coursesTitle")}
                               </div>
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="/User-panel-v.1/ticket"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
@@ -223,7 +224,41 @@ function Courses() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.ticketsTitle")}
                               </div>
-                            </a>
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/User-panel-v.1/verify"
+                              className={classNames(
+                                active
+                                  ? "dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:rounded-md hover:rounded-md hover:bg-gray-200 dark:text-gray-100"
+                                  : "text-gray-700",
+                                "flex flex-row items-center mx-4 px-2 gap-x-2"
+                              )}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="36"
+                                height="36"
+                                viewBox="0 0 36 36"
+                                fill="none"
+                                className="w-4 h-4"
+                              >
+                                <path
+                                  d="M12.6667 18L16.2222 21.5556L23.3333 14.4444M18 2L21.3957 5.32706L26 4.14359L27.2772 8.72276L31.8564 10L30.6729 14.6043L34 18L30.6729 21.3957L31.8564 26L27.2772 27.2772L26 31.8564L21.3957 30.6729L18 34L14.6043 30.6729L10 31.8564L8.72276 27.2772L4.14359 26L5.32706 21.3957L2 18L5.32706 14.6043L4.14359 10L8.72276 8.72276L10 4.14359L14.6043 5.32706L18 2Z"
+                                  className="dark:stroke-white"
+                                  stroke="#3F3F46"
+                                  stroke-width="3"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <div className="mt-1 py-2 text-sm dark:text-gray-100">
+                                {t("userBtn.verifyTitle")}
+                              </div>
+                            </Link>
                           )}
                         </Menu.Item>
                       </div>
@@ -231,8 +266,8 @@ function Courses() {
                       <div className="py-2">
                         <Menu.Item>
                           {({ active }) => (
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className={classNames(
                                 active
                                   ? "dark:bg-gray-700 transition-colors dark:hover:bg-rose-600 dark:hover:rounded-md hover:rounded-md hover:bg-rose-300 dark:text-gray-100"
@@ -261,7 +296,7 @@ function Courses() {
                               <div className="mt-1 py-2 text-sm dark:text-gray-100">
                                 {t("userBtn.exitTitle")}
                               </div>
-                            </a>
+                            </Link>
                           )}
                         </Menu.Item>
                       </div>
@@ -384,7 +419,7 @@ function Courses() {
                 </Menu>
               </div>
             </div>
-            <div className="w-full h-full md:h-min bg-gray-100 p-7 rounded-3xl dark:bg-gray-900 dark:xl:max-h-[540px] shrink-0">
+            <div className="w-full h-full md:h-min bg-gray-100 p-7 rounded-3xl dark:bg-gray-900 dark:xl:max-h-[540px] overflow-y-scroll mdmin:overflow-y-auto shrink-0">
               <div className="flex justify-between items-center flex-wrap gap-5 mb-10">
                 <div className="grid w-full grid-cols-3 gap-4 lg:grid-cols-2 md:flex md:flex-wrap md:justify-center">
                   <div className="flex justify-center items-center px-3 py-2 min-w-[250px] max-w-[310px] bg-yellow-400 rounded-2xl gap-x-2">
@@ -406,9 +441,11 @@ function Courses() {
                       </svg>
                     </div>
                     <div className="flex flex-col justify-center w-36">
-                      <span className="text-2xl text-white">{t("tickets.cards.yellow.title")}</span>
+                      <span className="text-2xl text-white">
+                        {t("tickets.cards.yellow.title")}
+                      </span>
                       <span className="text-xl font-bold text-white">
-                      {t("tickets.cards.yellow.detail")}
+                        {t("tickets.cards.yellow.detail")}
                       </span>
                     </div>
                   </div>
@@ -431,9 +468,11 @@ function Courses() {
                       </svg>
                     </div>
                     <div className="flex flex-col justify-center w-36">
-                      <span className="text-2xl text-white">{t("tickets.cards.blue.title")}</span>
+                      <span className="text-2xl text-white">
+                        {t("tickets.cards.blue.title")}
+                      </span>
                       <span className="text-xl font-bold text-white">
-                      {t("tickets.cards.blue.detail")}
+                        {t("tickets.cards.blue.detail")}
                       </span>
                     </div>
                   </div>
@@ -456,16 +495,18 @@ function Courses() {
                       </svg>
                     </div>
                     <div className="flex flex-col justify-center w-36">
-                      <span className="text-2xl text-white">{t("tickets.cards.red.title")}</span>
+                      <span className="text-2xl text-white">
+                        {t("tickets.cards.red.title")}
+                      </span>
                       <span className="text-xl font-bold text-white">
-                      {t("tickets.cards.red.detail")}
+                        {t("tickets.cards.red.detail")}
                       </span>
                     </div>
                   </div>
                 </div>
                 <a
                   href="#"
-                  className="flex items-center justify-center gap-x-4.5 w-full xs:w-auto text-2xl text-white font-bold bg-sky-500 p-4 md:p-6 rounded-2xl"
+                  className="flex items-center justify-center gap-x-4.5 w-full text-2xl text-white font-bold bg-sky-500 p-4 md:p-6 rounded-2xl"
                 >
                   <svg
                     className="w-10 h-10 mx-3 text-white"
@@ -488,7 +529,7 @@ function Courses() {
               <div className="bg-white dark:bg-gray-800 p-3.5 md:p-4.5 rounded-2xl">
                 <div className="flex justify-between items-center pb-3.5 md:pb-4.5 mb-6 md:mb-7 border-b border-b-gray-200 dark:border-b-gray-700">
                   <span className="mx-3 md:text-xl text-zinc-700 dark:text-white">
-                  {t("tickets.ticketBox.title")}
+                    {t("tickets.ticketBox.title")}
                   </span>
                 </div>
                 <div>
@@ -503,13 +544,13 @@ function Courses() {
                     </div>
                     <div className="flex items-center gap-5">
                       <span className="text-xs text-slate-500 dark:text-slate-400">
-                      {t("tickets.ticketBox.box1.date")}
+                        {t("tickets.ticketBox.box1.date")}
                       </span>
                       <span className="text-xs py-1 px-1.5 text-green-500 dark:text-green-400 bg-green-500/10 dark:bg-green-400/10 rounded">
-                      {t("tickets.ticketBox.box1.type")}
+                        {t("tickets.ticketBox.box1.type")}
                       </span>
                       <span className="text-xs py-1 px-1.5 text-slate-500 dark:text-yellow-400 bg-slate-500/10 dark:bg-yellow-400/10 rounded">
-                      {t("tickets.ticketBox.box1.progress")}
+                        {t("tickets.ticketBox.box1.progress")}
                       </span>
                     </div>
                   </div>
@@ -519,18 +560,18 @@ function Courses() {
                         href="#"
                         className="text-zinc-700 dark:text-white w-full font-danaMedium sm:max-w-md md:truncate"
                       >
-                         {t("tickets.ticketBox.box2.title")}
+                        {t("tickets.ticketBox.box2.title")}
                       </a>
                     </div>
                     <div className="flex items-center gap-5">
                       <span className="text-xs text-slate-500 dark:text-slate-400">
-                      {t("tickets.ticketBox.box2.date")}
+                        {t("tickets.ticketBox.box2.date")}
                       </span>
                       <span className="text-xs py-1 px-1.5 text-rose-500 dark:text-rose-400 bg-rose-500/10 dark:bg-rose-400/10 rounded">
-                      {t("tickets.ticketBox.box2.type")}
+                        {t("tickets.ticketBox.box2.type")}
                       </span>
                       <span className="text-xs py-1 px-1.5 text-slate-500 dark:text-yellow-400 bg-slate-500/10 dark:bg-yellow-400/10 rounded">
-                      {t("tickets.ticketBox.box2.progress")}
+                        {t("tickets.ticketBox.box2.progress")}
                       </span>
                     </div>
                   </div>

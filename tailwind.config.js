@@ -3,13 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   darkMode: "class",
   theme: {
-    extend: {
-    },
+    extend: {},
     fontFamily: {
-      'main': ["Josefin Sans", "sans-serif"],
-      "fa": ["Vazirmatn", 'sans-serif'],
+      main: ["Josefin Sans", "sans-serif"],
+      fa: ["Vazirmatn", "sans-serif"],
     },
     screens: {
+      mdmin: { min: "768px" },
       xs: { max: "480px" },
       sm: { max: "620px" },
       md: { max: "768px" },
