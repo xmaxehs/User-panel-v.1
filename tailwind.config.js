@@ -10,6 +10,8 @@ export default {
     },
     screens: {
       mdmin: { min: "768px" },
+      xsmin: { min: "480px" },
+      lgmin: { min: "1200px" },
       xs: { max: "480px" },
       sm: { max: "620px" },
       md: { max: "768px" },

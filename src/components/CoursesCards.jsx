@@ -5,7 +5,7 @@ const CoursesCards = () => {
 
   return (
     <>
-      <div className="grid grid-rows-2 xs:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
+      <div className="grid grid-rows-2 xsmin:grid-cols-2 lgmin:grid-cols-3 2xl:grid-cols-4 gap-5">
         <div className="flex flex-col overflow-hidden bg-white dark:bg-gray-800 shadow-light dark:shadow-none dark:border dark:border-gray-700 rounded-2xl">
           <div className="relative">
             <Link
